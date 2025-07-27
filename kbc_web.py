@@ -5,38 +5,45 @@ app = Flask(__name__, template_folder='templates', static_folder='')
 
 # Game data
 questions = [
-    "Which planet is known as the Red Planet?",
-    "Who developed the Python programming language?",
-    "What is the capital of France?",
-    "What is H2O commonly known as?",
-    "Who was the first person to walk on the Moon?",
-    "Which Indian cricketer is known as the 'Master Blaster'?",
-    "What is the largest organ in the human body?"
+    "What is the Heisenberg Uncertainty Principle related to?",
+    "Which number is known as the Hardy-Ramanujan number?",
+    "What is the capital of the country with the world's northernmost permanent settlement?",
+    "Which element has the highest melting point?",
+    "Who formulated the laws of planetary motion?",
+    "Which Indian physicist won the Nobel Prize in 1930 for Physics?",
+    "What does the acronym 'LASER' stand for?"
 ]
 
+
 options = [
-    ["Earth", "Mars", "Jupiter", "Venus"],
-    ["Guido van Rossum", "Dennis Ritchie", "James Gosling", "Linus Torvalds"],
-    ["Berlin", "Madrid", "Paris", "Lisbon"],
-    ["Salt", "Oxygen", "Hydrogen", "Water"],
-    ["Buzz Aldrin", "Neil Armstrong", "Yuri Gagarin", "Rakesh Sharma"],
-    ["Virat Kohli", "MS Dhoni", "Rahul Dravid", "Sachin Tendulkar"],
-    ["Heart", "Skin", "Lungs", "Liver"]
+    ["Quantum Mechanics", "Relativity", "Thermodynamics", "Electromagnetism"],
+    ["1729", "1089", "2718", "3141"],
+    ["Oslo", "Reykjavik", "Longyearbyen", "Tromsø"],
+    ["Tungsten", "Carbon", "Osmium", "Iron"],
+    ["Isaac Newton", "Galileo Galilei", "Johannes Kepler", "Tycho Brahe"],
+    ["Homi Bhabha", "Satyendra Nath Bose", "C. V. Raman", "Venkatraman Ramakrishnan"],
+    ["Light Amplification by Stimulated Emission of Radiation", "Light Absorption by Stimulated Emission of Rays", "Linear Amplification by Stimulated Energy Radiation", "Luminous Acceleration by Static Electromagnetic Rays"]
 ]
 
 correct_answers = [
-    "Mars", "Guido van Rossum", "Paris", "Water",
-    "Neil Armstrong", "Sachin Tendulkar", "Skin"
+    "Quantum Mechanics",
+    "1729",
+    "Longyearbyen",
+    "Tungsten",
+    "Johannes Kepler",
+    "C. V. Raman",
+    "Light Amplification by Stimulated Emission of Radiation"
 ]
 
+
 phone_friend_suggestions = [
-    "I'm pretty sure it's Mars.",
-    "That's definitely Guido van Rossum.",
-    "Paris is the capital of France!",
-    "H2O? That’s water, of course.",
-    "Neil Armstrong was the first.",
-    "Has to be Sachin Tendulkar.",
-    "The skin is the largest organ."
+    "It's related to Quantum Mechanics, I'm sure.",
+    "Definitely 1729 — Ramanujan's famous number!",
+    "Pretty sure it’s Longyearbyen in Norway.",
+    "Tungsten has the highest melting point.",
+    "Kepler gave the laws of planetary motion.",
+    "That’s C. V. Raman — Nobel Laureate 1930.",
+    "LASER stands for Light Amplification by Stimulated Emission of Radiation."
 ]
 
 prize_pool = ["₹1,000", "₹2,000", "₹3,000", "₹5,000", "₹10,000", "₹20,000", "₹40,000"]
